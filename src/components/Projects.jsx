@@ -69,6 +69,14 @@ const ProjectCard = ({ title, description, tech, index, icon: Icon, github, live
 
 const Projects = () => {
     const projects = [
+         {
+            title:'AI-Powered Invoice Analytics & Comparison Platform',
+            icon:"Layout",
+            image:'/projects/AIProjectImage.png',
+            description: 'AI-powered Invoice Intelligence Platform built with the MERN stack, featuring CSV/Excel invoice uploads, Gemini AI-powered summaries and anomaly detection, invoice comparison with field-level discrepancy reports, an interactive analytics dashboard, a hybrid chatbot for invoice-specific and general queries, and secure Firebase Authentication.',
+            tech: ['React', 'Redux', 'Node.js', 'MongoDB', 'Tailwind', 'Framer Motion','Firebase','Gemini 3.5 Flash','Recharts','PapaParse(Excel/CSV)','jsPDF'],
+            github: 'https://github.com/aniketray01/AI-Powered-Invoice-Analytics-Comparison-Platform',
+        },
         {
             title: 'EquiPay',
             icon: Layout,
@@ -88,6 +96,7 @@ const Projects = () => {
             github: 'https://github.com/aniketray01/DSA-Tracker',
             live: 'https://dsa-tracker-two-delta.vercel.app'
         }
+       
     ];
 
     return (
