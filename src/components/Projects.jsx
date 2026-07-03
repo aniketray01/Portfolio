@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Layout, Server } from 'lucide-react';
+import { div } from 'framer-motion/client';
+
 
 const ProjectCard = ({ title, description, tech, index, icon: Icon, github, live, image }) => (
     <motion.div
@@ -77,13 +79,14 @@ const Projects = () => {
             live: 'https://equi-pay-xi.vercel.app/'
         },
         {
-            title: 'Rich Text Editor',
+            title: 'DSA Tracker',
             icon: Server,
-            image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1000&auto=format&fit=crop',
-            description: 'Professional-grade notes application integrated with React Quill. Implements Redux Toolkit for state management and Framer Motion for high-end declarative animations.',
-            tech: ['React', 'Redux', 'Node.js', 'MongoDB', 'Tailwind', 'Framer Motion'],
-            github: 'https://github.com/aniketray01/NotesApp',
-            live: 'https://notes-app-ten-dun-41.vercel.app'
+            // image: 'https://raw.githubusercontent.com/aniketray01/DSA-Tracker/refs/heads/main/screenshots/progress.png',
+            image:'/projects/DSAImage.png',
+            description: 'DSA Tracker — A MERN stack web application to track coding progress, manage solved problems, monitor topic-wise performance, set goals, and visualize learning consistency through an interactive dashboard.',
+            tech: ['React', 'Redux', 'Node.js', 'MongoDB', 'Tailwind', 'Framer Motion','Firebase'],
+            github: 'https://github.com/aniketray01/DSA-Tracker',
+            live: 'https://dsa-tracker-two-delta.vercel.app'
         }
     ];
 
